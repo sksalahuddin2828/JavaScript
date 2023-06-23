@@ -39,9 +39,7 @@ function modelReady() {
 
 function draw() {
   image(video, 0, 0);
-  
   let d = dist(noseX, noseY, eyelX, eyelY);
-
   fill(255, 0, 0);
   ellipse(noseX, noseY, d/3);
   fill(0,0,255);
