@@ -48,6 +48,4 @@ function draw() {
   ellipse(eyelX, eyelY, d/3);
   fill(0,0,255);
   ellipse(eyerX, eyerY, d/3);
-
-
 }
