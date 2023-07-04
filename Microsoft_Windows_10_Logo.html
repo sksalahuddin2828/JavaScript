@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>Turtle Graphics</title>
+  </head>
+  <body>
+    <script>
+      const turtle = {
+        penColor: [255, 255, 255],
+        penWidth: 1,
+        penDown: true,
+        lines: [],
+
+        goTo(x, y) {
+          if (this.penDown) {
+            this.lines.push([x, y]);
+          }
+        },
+
+        draw() {
+          for (let i = 0; i < this.lines.length - 1; i++) {
+            const [x1, y1] = this.lines[i];
+            const [x2, y2] = this.lines[i + 1];
+            stroke(this.penColor[0], this.penColor[1], this.penColor[2]);
+            strokeWeight(this.penWidth);
+            line(x1, y1, x2, y2);
+          }
+        },
+      };
+
+      function setup() {
+        createCanvas(400, 400);
+        background(0);
+
+        turtle.penColor = [255, 255, 255];
+        turtle.penWidth = 1;
+        turtle.penDown = true;
+
+        turtle.goTo(-50, 60);
+        turtle.goTo(100, 100);
+        turtle.goTo(100, -100);
+        turtle.goTo(-50, -60);
+        turtle.goTo(-50, 60);
+        turtle.goTo(15, 100);
+        turtle.goTo(15, -100);
+        turtle.goTo(100, 0);
+        turtle.goTo(-100, 0);
+      }
+
+      function draw() {
+        turtle.draw();
+      }
+    </script>
+  </body>
+</html>
