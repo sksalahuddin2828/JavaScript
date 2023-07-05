@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Game</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    #game-description {
+      color: grey;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    #game-score {
+      font-size: 16px;
+      color: green;
+    }
+    #displayed-words {
+      font-size: 28px;
+      padding-top: 10px;
+    }
+    #time-left {
+      font-size: 14px;
+      color: orange;
+      margin-top: 10px;
+    }
+    #color-entry {
+      width: 200px;
+      margin-top: 10px;
+    }
+    #start-button, #reset-button {
+      width: 100px;
+      background-color: pink;
+      color: black;
+      border: none;
+      padding: 10px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    #reset-button {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p id="game-description">Game Description: Enter the color of the words displayed below. And keep in mind not to enter the word text itself</p>
+    <p id="game-score">Your Score: 0</p>
+    <p id="displayed-words"></p>
+    <p id="time-left">Game Ends in: -</p>
+    <input type="text" id="color-entry" placeholder="Enter the color" autofocus>
+    <br>
+    <button id="start-button">Start</button>
+    <button id="reset-button">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
