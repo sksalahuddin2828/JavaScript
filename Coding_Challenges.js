@@ -63,4 +63,22 @@ for (let i = 0; i < n; i++) {
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
-// 4. 
+// 4. Returning the Nth Value from the Fibonacci Sequence:
+
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+let n = 10;
+let fibonacci_number = fibonacci(n);
+console.log(fibonacci_number);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5. Finding the Average of Numbers:
+
+
