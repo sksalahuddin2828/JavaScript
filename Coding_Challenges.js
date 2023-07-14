@@ -81,4 +81,7 @@ console.log(fibonacci_number);
 
 // 5. Finding the Average of Numbers:
 
-
+let numbers = [10, 20, 30, 40, 50];
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+let average = sum / numbers.length;
+console.log("Average: " + average);
