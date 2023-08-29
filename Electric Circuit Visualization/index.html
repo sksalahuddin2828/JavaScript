@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Electrical Circuit Visualization</title>
+</head>
+<body>
+    <div class="container">
+        <div class="visualization" id="visualization"></div>
+        <div class="controls">
+            <label for="current-slider">Current (A)</label>
+            <input type="range" id="current-slider" min="0.01" max="10" step="0.01" value="5">
+            
+            <label for="resistance-slider">Resistance (Ω)</label>
+            <input type="range" id="resistance-slider" min="0.01" max="2" step="0.01" value="1">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
